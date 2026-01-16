@@ -1,33 +1,38 @@
-/** 
-  Utiliser des primitives graphiques dans un script Processing
-**/
+size(600,400); // créer une fenêtre de taille 400x300
+background(255);
+stroke(127);
 
-/* Variables "globales" du sketch [En réalité, attributs de la classe PApplet] */
-color GREEN = color(0,255,0);
-color BLUE = color(0,0,255);
-color SEMI_TRANSPARENT_RED = color(255,0,0,120);
+//dessiner le cadriage
+for(int i=100;i<500;i=i+100)
+  line(0,i,width,i);
+for(int j=100;j<700;j=j+100)
+  line(j,0,j,height);
 
-void settings() {
-  size(400,300); // créer une fenêtre de taille 400x300
-}
+//dessiner les lignes
+stroke(0);
+line(0,0,400,400);
 
-void setup(){ // initialiser le sketch
+noStroke();
+fill(129,129,129);
+circle(200,100,100);
 
-}
-  
-void draw(){ // boucle infinie de dessin
-  background(0); // redessiner la fenêtre en noir - 0-->noir / 255-->blanc  
-  noStroke(); // ne pas dessiner le contour des objets dessinés
-  
-  /** dessin des trois formes **/
-  // dessin du cercle
-  fill(GREEN);
-  circle(200,200,100);  
-  // dessin du carré bleu
-  fill(BLUE);
-  square(50,50,100);
-  //dessun du triangle
-  fill(SEMI_TRANSPARENT_RED);
-  triangle(40,20,250,150,80,250); 
-}
-  
+stroke(0);
+line(200,100,400,300);
+
+noStroke();
+fill(252,196,33);
+circle(500,200,100);
+
+strokeWeight(4);
+strokeCap(SQUARE); //mettre les bord de la ligne 'carré'
+
+stroke(0);
+line(400,300,500,200);
+
+//dessiner le cercle
+noStroke(); //pas de bordures
+
+
+
+fill(252,196,33);
+circle(120,100,100);
