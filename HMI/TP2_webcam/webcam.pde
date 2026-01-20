@@ -3,6 +3,7 @@
  */
 import processing.video.*;
 
+
 Capture cam;
 
 void setup() {

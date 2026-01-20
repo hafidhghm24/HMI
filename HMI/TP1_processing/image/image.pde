@@ -21,7 +21,6 @@ void setup(){
 void draw(){
    background(BG);           // On utilise la variable BG au lieu de "255" fixe
    
-   // 3. AFFICHAGE (Système de calques)
    image(img, 0, 250);       // Le fond
    image(img2, 100, 350);    // L'image par-dessus
    
